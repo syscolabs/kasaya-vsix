@@ -1,0 +1,13 @@
+# Sample error free script
+in this context
+    NAME is "Kasaya"
+    display version is from "./some-script.kasaya"
+end
+
+how to display name
+    print $NAME
+end
+
+start
+    display name
+end

@@ -1,0 +1,12 @@
+in this context
+    NAME is "Kasaya"
+    VERSION is "1"
+end
+
+how to display version
+    print $VERSION
+end
+
+start
+    display version
+end

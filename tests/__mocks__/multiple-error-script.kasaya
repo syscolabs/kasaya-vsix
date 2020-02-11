@@ -1,0 +1,13 @@
+in this context
+    NAME is "Kasaya"
+    ID is "ID001"
+end
+
+how to display info
+    print $NAME
+    print $VERSION_NUMBER
+end
+
+start
+    display
+end

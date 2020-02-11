@@ -1,0 +1,54 @@
+{
+	"name": "kasaya-vsix",
+	"displayName": "Kasāya",
+	"description": "Visual Studio Code extension for Kasāya scripting",
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "kasaya",
+				"aliases": [
+					"Kasaya",
+					"kasaya"
+				],
+				"extensions": [
+					".kasaya"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "kasaya",
+				"scopeName": "source.kasaya",
+				"path": "./syntaxes/kasaya.tmLanguage.json"
+			}
+		]
+	},
+	"scripts": {
+		"test": "jest"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.41.0",
+		"eslint": "^6.6.0",
+		"eslint-plugin-jest": "^23.7.0",
+		"glob": "^7.1.5",
+		"jest": "^25.1.0",
+		"typescript": "^3.6.4",
+		"vscode-test": "^1.2.2"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"publisher": "kasaya"
+}

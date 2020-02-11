@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Kasaya",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.kasaya",
+					"match": "\\b(^end$|^how to|^in this context|is from env|^start|is from)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.kasaya",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.kasaya",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line",
+					"match": "^\\s*#(.+)"
+				}
+			]
+		}
+	},
+	"scopeName": "source.kasaya"
+}
